@@ -21,7 +21,6 @@ const router = createBrowserRouter(
       <Route path="/accomodation/:idAccomodation" element={<Accomodation />} />
       <Route path="about" element={<About />} />
       <Route path="*" element={<Error />} />
-      {/* ... etc. */}
     </Route>
   )
 );
