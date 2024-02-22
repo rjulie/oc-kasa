@@ -7,8 +7,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import About from './pages/About'
-import Home from './pages/Home'
 import Accomodation from './pages/Accomodation'
+import Error from './components/Error'
+import Home from './pages/Home'
 
 
 // import './main.css';
@@ -19,7 +20,7 @@ const router = createBrowserRouter(
       <Route path="/" element={<Home />} />
       <Route path="/accomodation/:idAccomodation" element={<Accomodation />} />
       <Route path="about" element={<About />} />
-
+      <Route path="*" element={<Error />} />
       {/* ... etc. */}
     </Route>
   )
