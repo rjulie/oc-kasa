@@ -1,4 +1,4 @@
-import '../utils/style/Banner.css'
+import '../sass/components/Banner.css'
 
 function Banner() {
   return <div className='banner'>
