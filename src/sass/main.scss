@@ -1,1 +1,8 @@
-@import "./base/typography" // importe le fichier _typography.scss
+@import './utils/variables';
+@import './utils/mixins';
+@import './base/normalize';
+@import './base/typography';
+
+// Layout
+@import './layout/Footer';
+@import './layout/Header';

@@ -1,0 +1,29 @@
+// @mixin text-p {
+//   font-family: "Montserrat", sans-serif;
+//   font-optical-sizing: auto;
+//   font-weight: 500;
+//   font-style: normal;
+// }
+
+// $spacing-s: 30px;
+// $spacing-m: 60px;
+
+
+
+.footer {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 66px 0px 29px 0px;
+  align-items: center;
+  gap: $spacing-m;
+
+  p {
+    color: white;
+    @include text-p;
+    font-size: 24px;
+    margin: 0;
+  }
+}

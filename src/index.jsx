@@ -12,14 +12,14 @@ import Error from './components/Error'
 import Home from './pages/Home'
 
 
-// import './main.css';
+import './sass/main.css';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
       <Route path="/" element={<Home />} />
       <Route path="/accomodation/:idAccomodation" element={<Accomodation />} />
-      <Route path="about" element={<About />} />
+      <Route path="/about" element={<About />} />
       <Route path="*" element={<Error />} />
     </Route>
   )

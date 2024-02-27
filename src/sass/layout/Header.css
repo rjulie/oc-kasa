@@ -1,0 +1,8 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 45px 100px 50px 100px;
+}
+.navbar img {
+  height: 68px;
+}/*# sourceMappingURL=Header.css.map */
