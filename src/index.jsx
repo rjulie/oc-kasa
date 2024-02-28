@@ -5,14 +5,13 @@ import {
   createRoutesFromElements,
   Route,
   RouterProvider,
-} from "react-router-dom";
+} from 'react-router-dom'
 import About from './pages/About'
 import Accomodation from './pages/Accomodation'
 import Error from './components/Error'
 import Home from './pages/Home'
 
-
-import './sass/main.css';
+import './sass/main.css'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,10 +22,10 @@ const router = createBrowserRouter(
       <Route path="*" element={<Error />} />
     </Route>
   )
-);
+)
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>
-);
+)
