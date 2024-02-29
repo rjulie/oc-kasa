@@ -10,6 +10,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+.container {
+  width: 1240px;
+  border-radius: 25px;
+  background: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+.container .cards-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px;
+}
+
 .error {
   display: flex;
   flex-direction: column;
@@ -132,21 +151,41 @@ code {
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 }
 
-.container {
-  width: 1240px;
-  border-radius: 25px;
-  background: #f6f6f6;
+.dropdown-item {
+  background-color: #ff6060;
+  width: 1023px;
+  padding: 10px 20px 10px 15px;
+  border-radius: 5px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 50px auto;
+  justify-content: space-between;
 }
-.container .cards-items {
+.dropdown-item h2 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  margin: 0;
+}
+.dropdown-item svg {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.dropdown-text {
+  width: 1023px;
+}
+
+.dropdowns {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 60px;
-  justify-content: flex-start;
   align-items: center;
-  padding: 50px;
+  flex-direction: column;
+  gap: 30px;
+  margin: 38px 0;
 }/*# sourceMappingURL=main.css.map */

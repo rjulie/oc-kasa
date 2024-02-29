@@ -1,7 +1,7 @@
 import { appartmentList } from '../../data/list'
 import CardItem from '../../components/CardItem'
 
-function Container() {
+function CardsItems() {
   return (
     <div className="container">
       <div className="cards-items">
@@ -15,4 +15,4 @@ function Container() {
   )
 }
 
-export default Container
+export default CardsItems

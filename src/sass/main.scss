@@ -4,6 +4,7 @@
 @import './base/typography';
 
 // Layout
+@import './layout/CardsItems';
 @import './layout/Error';
 @import './layout/Footer';
 @import './layout/Header';
@@ -11,4 +12,7 @@
 //components
 @import './components/Banner';
 @import './components/CardItem';
-@import './components/Container';
+@import './components/Dropdown';
+
+//pages
+@import './pages/about';
