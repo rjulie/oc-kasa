@@ -16,9 +16,8 @@
 }
 
 .links > a {
-  color: black;
+  color: $secondary-color;
   @include text-p;
-  font-size: 24px;
   text-decoration: none;
 
   &:active {

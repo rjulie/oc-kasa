@@ -3,6 +3,7 @@
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  font-size: 24px;
 }
 
 @mixin text-h1 {
@@ -16,6 +17,21 @@
 @mixin text-small {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@mixin text-medium {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+}
+
+@mixin text-xlarge {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 288px;
   font-style: normal;
   font-weight: 700;
 }

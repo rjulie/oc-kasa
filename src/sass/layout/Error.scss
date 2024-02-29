@@ -1,0 +1,29 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-l;
+  margin: $spacing-l 0;
+  justify-content: center;
+  align-items: center;
+
+  .error-title {
+    color: $main-color;
+    text-align: center;
+    @include text-xlarge;
+  }
+
+  .error-text {
+    color: $main-color;
+    @include text-medium;
+  }
+
+  .error-redirect {
+    color: $secondary-color;
+    text-decoration: none;
+    @include text-small;
+
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}

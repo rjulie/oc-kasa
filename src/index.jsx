@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom'
 import About from './pages/About'
 import Accomodation from './pages/Accomodation'
-import Error from './components/Error'
+import ErrorPage from './pages/Error'
 import Home from './pages/Home'
 
 import './sass/main.css'
@@ -19,7 +19,7 @@ const router = createBrowserRouter(
       <Route path="/" element={<Home />} />
       <Route path="/accomodation/:idAccomodation" element={<Accomodation />} />
       <Route path="/about" element={<About />} />
-      <Route path="*" element={<Error />} />
+      <Route path="*" element={<ErrorPage />} />
     </Route>
   )
 )
