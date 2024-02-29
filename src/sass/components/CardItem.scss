@@ -1,0 +1,15 @@
+.card-item {
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+
+  h2 {
+    @include text-small;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  }
+}

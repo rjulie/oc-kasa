@@ -1,0 +1,19 @@
+.container {
+  width: 1240px;
+  border-radius: 25px;
+  background: $background-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+
+  .cards-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: $spacing-m;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px;
+  }
+}

@@ -12,3 +12,10 @@
   font-style: normal;
   font-size: 48px;
 }
+
+@mixin text-small {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}

@@ -5,5 +5,9 @@
 
 // Layout
 @import './layout/Header';
-@import './layout/Banner';
 @import './layout/Footer';
+
+//components
+@import './components/Banner';
+@import './components/CardItem';
+@import './components/Container';
