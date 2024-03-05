@@ -1,4 +1,6 @@
-function Banner({ title, cover }) {
+import PropTypes from 'prop-types'
+
+function Banner({ title = null, cover }) {
   return (
     <div
       className="banner"
@@ -12,6 +14,11 @@ function Banner({ title, cover }) {
       <h1>{title}</h1>
     </div>
   )
+}
+
+Banner.propTypes = {
+  cover: PropTypes.string,
+  title: PropTypes.string,
 }
 
 export default Banner

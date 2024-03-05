@@ -182,10 +182,20 @@ code {
   width: 1023px;
 }
 
+.gallery {
+  height: 415px;
+  border-radius: 25px;
+  margin: 0 auto;
+}
+
 .dropdowns {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 30px;
   margin: 38px 0;
+}
+
+.link-card {
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */

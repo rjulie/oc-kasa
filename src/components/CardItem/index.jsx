@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 function CardItem({ title, cover }) {
   return (
     <div
@@ -12,6 +14,11 @@ function CardItem({ title, cover }) {
       <h2>{title}</h2>
     </div>
   )
+}
+
+CardItem.propTypes = {
+  title: PropTypes.string,
+  cover: PropTypes.string,
 }
 
 export default CardItem

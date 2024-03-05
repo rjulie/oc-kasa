@@ -1,7 +1,7 @@
 import Banner from '../../components/Banner'
 import Dropdowns from '../../components/Dropdowns'
-import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import Header from '../../components/Header'
 
 function About() {
   return (

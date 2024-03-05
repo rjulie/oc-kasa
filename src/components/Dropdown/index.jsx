@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import PropTypes from 'prop-types'
 
 function Dropdown({ title }) {
   return (
@@ -10,6 +11,10 @@ function Dropdown({ title }) {
       </div>
     </div>
   )
+}
+
+Dropdown.propTypes = {
+  title: PropTypes.string,
 }
 
 export default Dropdown
