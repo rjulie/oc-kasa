@@ -5,11 +5,11 @@ import { useState } from 'react'
 import PropTypes from 'prop-types'
 
 function OpenDropdown({ title, description = null }) {
-  const [open, setOpen] = useState(null)
+  const [open, setOpen] = useState(false)
 
   const toggle = () => {
-    if (open === true) {
-      return setOpen(null)
+    if (open) {
+      return setOpen(false)
     }
     setOpen(true)
   }
@@ -19,14 +19,14 @@ function OpenDropdown({ title, description = null }) {
       <div className="dropdown-item" onClick={() => toggle()}>
         <h2>{title}</h2>
         <span>
-          {open === true ? (
+          {open ? (
             <FontAwesomeIcon icon={faChevronDown} />
           ) : (
             <FontAwesomeIcon icon={faChevronUp} />
           )}
         </span>
       </div>
-      <div className={open === true ? 'dropdown-text show' : 'dropdown-text'}>
+      <div className={open ? 'dropdown-text show' : 'dropdown-text'}>
         <p>{description}</p>
       </div>
     </div>
