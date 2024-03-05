@@ -78,7 +78,6 @@ code {
 .footer p {
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-size: 24px;
@@ -103,7 +102,6 @@ code {
 .links > a {
   color: #000000;
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-size: 24px;
@@ -125,7 +123,6 @@ code {
 }
 .banner h1 {
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
   font-size: 48px;
@@ -159,11 +156,11 @@ code {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
 .dropdown-item h2 {
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
   font-size: 24px;
@@ -172,14 +169,31 @@ code {
 .dropdown-item svg {
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
   font-size: 24px;
 }
 
 .dropdown-text {
-  width: 1023px;
+  width: 1058px;
+  background-color: #f6f6f6;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+.dropdown-text p {
+  padding: 15px;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.dropdown-text.show {
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 
 .gallery {

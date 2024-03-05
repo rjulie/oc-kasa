@@ -1,6 +1,5 @@
 @mixin text-p {
   font-family: 'Montserrat', sans-serif;
-  font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-size: 24px;
@@ -8,7 +7,6 @@
 
 @mixin text-bold-p {
   font-family: 'Montserrat', sans-serif;
-  font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
   font-size: 24px;
@@ -16,10 +14,16 @@
 
 @mixin text-h1 {
   font-family: 'Montserrat', sans-serif;
-  font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
   font-size: 48px;
+}
+
+@mixin text-xs {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
 }
 
 @mixin text-small {

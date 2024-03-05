@@ -1,14 +1,33 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import { useState } from 'react'
 
-function OpenDropdown({ title, description }) {
+function OpenDropdown({ title, description, index }) {
+  const [open, setOpen] = useState(null)
+
+  const toggle = (index) => {
+    if (open === index) {
+      return setOpen(null)
+    }
+    setOpen(index)
+  }
+
   return (
-    <div>
-      <div className="dropdown-item">
+    <div className="dropdown">
+      <div className="dropdown-item" onClick={() => toggle(index)}>
         <h2>{title}</h2>
-        <FontAwesomeIcon icon={faChevronDown} />
+        <span>
+          {open === index ? (
+            <FontAwesomeIcon icon={faChevronDown} />
+          ) : (
+            <FontAwesomeIcon icon={faChevronUp} />
+          )}
+        </span>
       </div>
-      <p className="dropdown-text">{description}</p>
+      <div className={open === index ? 'dropdown-text show' : 'dropdown-text'}>
+        <p>{description}</p>
+      </div>
     </div>
   )
 }

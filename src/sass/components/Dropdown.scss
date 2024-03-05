@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 
   h2 {
     color: white;
@@ -20,5 +21,21 @@
 }
 
 .dropdown-text {
-  width: 1023px;
+  width: 1058px;
+  background-color: $background-color;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+
+  p {
+    padding: $spacing-xs;
+    margin: 0;
+    @include text-xs;
+  }
+}
+
+.dropdown-text.show {
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
