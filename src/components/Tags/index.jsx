@@ -2,14 +2,16 @@ import PropTypes from 'prop-types'
 
 function Tags({ tags }) {
   return (
-    <div className="tags">
-      {/* {tags.map(({ tag }) => (
-        <div key={tag}>
-          <Tag tag={tag} />
-          {console.log(tag)}
+    <div>
+      {tags ? (
+        <div className="tags">
+          {tags.map((tag, index) => (
+            <div className="tag" key={index}>
+              {tag}
+            </div>
+          ))}
         </div>
-      ))} */}
-      {tags}
+      ) : null}
     </div>
   )
 }

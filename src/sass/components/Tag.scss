@@ -5,10 +5,13 @@
 }
 
 .tag {
-  width: 115px;
+  padding: 0 10px;
   height: 25px;
   border-radius: 10px;
   background-color: $main-color;
   color: white;
   @include text-tag;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

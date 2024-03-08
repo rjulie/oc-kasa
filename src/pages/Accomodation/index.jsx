@@ -5,7 +5,6 @@ import CardAccomodation from '../../components/CardAccomodation'
 function Accomodation() {
   const { idAccomodation } = useParams()
   const [appartment, setAppartment] = useState({})
-  const [equipmentsList, setEquipmentsList] = useState({})
 
   useEffect(() => {
     ;(() => {
@@ -25,16 +24,13 @@ function Accomodation() {
 
   useEffect(() => {
     console.log(appartment)
-    console.log(appartment.host)
-    console.log(appartment.tags)
-    const list = appartment.equipments
-    console.log(list)
-    setEquipmentsList(list)
-  }, [appartment, equipmentsList])
+  }, [appartment])
 
   return (
     <div>
-      <div>{appartment && <CardAccomodation appartment={appartment} />}</div>
+      <div>
+        {appartment ? <CardAccomodation appartment={appartment} /> : null}
+      </div>
     </div>
   )
 }

@@ -32,7 +32,6 @@ function CardAccomodation({ appartment }) {
           title="Équipements"
           equipments={appartment.equipments}
           width="582px"
-          idAccomodation={appartment.id}
         />
       </div>
     </div>

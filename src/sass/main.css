@@ -212,7 +212,7 @@ code {
   transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 
-.gallery {
+.slideshow {
   height: 415px;
   border-radius: 25px;
   margin: 0 auto;
@@ -225,7 +225,7 @@ code {
 }
 
 .tag {
-  width: 115px;
+  padding: 0 10px;
   height: 25px;
   border-radius: 10px;
   background-color: #ff6060;
@@ -234,6 +234,9 @@ code {
   font-weight: 700;
   font-style: normal;
   font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-title {
