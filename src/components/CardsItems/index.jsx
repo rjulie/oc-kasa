@@ -6,9 +6,17 @@ function CardsItems() {
   const [appartmentList, setAppartmentList] = useState([])
 
   useEffect(() => {
-    ;(async () => {
-      const data = await fetch('logements.json').then((res) => res.json())
-      setAppartmentList(data)
+    ;(() => {
+      fetch('logements.json')
+        .then(function (response) {
+          return response.json()
+        })
+        .then(function (data) {
+          setAppartmentList(data)
+        })
+        .catch((error) => {
+          console.log(error)
+        })
     })()
   }, [])
 

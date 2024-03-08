@@ -1,0 +1,7 @@
+.card-accomodation {
+  padding: 0 100px;
+}
+.card-accomodation .card-collapse {
+  display: flex;
+  flex-direction: row;
+}/*# sourceMappingURL=CardAccomodation.css.map */

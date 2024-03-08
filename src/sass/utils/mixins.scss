@@ -1,3 +1,10 @@
+@mixin text-tag {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+}
+
 @mixin text-p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -17,6 +24,13 @@
   font-weight: 700;
   font-style: normal;
   font-size: 48px;
+}
+
+@mixin text-xs-light {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 @mixin text-xs {

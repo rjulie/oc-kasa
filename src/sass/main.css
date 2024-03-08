@@ -10,6 +10,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+.card-accomodation {
+  padding: 0 100px;
+}
+.card-accomodation .card-collapse {
+  display: flex;
+  flex-direction: row;
+}
+
 .container {
   width: 1240px;
   border-radius: 25px;
@@ -148,17 +156,15 @@ code {
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 }
 
-.dropdown-item {
+.collapse-item {
   background-color: #ff6060;
-  width: 1023px;
   padding: 10px 20px 10px 15px;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  cursor: pointer;
 }
-.dropdown-item h2 {
+.collapse-item h2 {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -166,31 +172,41 @@ code {
   font-size: 24px;
   margin: 0;
 }
-.dropdown-item svg {
+.collapse-item svg {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 24px;
+  cursor: pointer;
 }
 
-.dropdown-text {
-  width: 1058px;
+.collapse-content {
+  padding: 10px 20px 10px 15px;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+.collapse-content li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.collapse-text {
   background-color: #f6f6f6;
   max-height: 0;
   overflow: hidden;
   transition: all 0.5s cubic-bezier(0, 1, 0, 1);
 }
-.dropdown-text p {
-  padding: 15px;
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-}
 
-.dropdown-text.show {
+.collapse-text.show {
   height: auto;
   max-height: 9999px;
   transition: all 0.5s cubic-bezier(1, 0, 1, 0);
@@ -200,6 +216,46 @@ code {
   height: 415px;
   border-radius: 25px;
   margin: 0 auto;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.tag {
+  width: 115px;
+  height: 25px;
+  border-radius: 10px;
+  background-color: #ff6060;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.card-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card-title h1 {
+  color: #ff6060;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  margin: 0;
+}
+.card-title .location {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .dropdowns {

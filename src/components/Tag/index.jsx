@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types'
 
-function Tag({ tags }) {
-  return <div>{tags}</div>
+function Tag({ tag }) {
+  return <div className="tag">{tag}</div>
 }
 
 Tag.propTypes = {
-  tags: PropTypes.array,
+  tag: PropTypes.string,
 }
 
 export default Tag

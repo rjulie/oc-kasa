@@ -2,9 +2,9 @@ import PropTypes from 'prop-types'
 
 function Title({ title, location }) {
   return (
-    <div>
+    <div className="card-title">
       <h1>{title}</h1>
-      <div>{location}</div>
+      <div className="location">{location}</div>
     </div>
   )
 }

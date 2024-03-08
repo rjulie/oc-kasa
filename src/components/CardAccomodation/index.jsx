@@ -1,30 +1,46 @@
-// import { appartmentList } from '../../data/list'
-// import Gallery from '../../components/Gallery'
-import Tag from '../../components/Tag'
+import PropTypes from 'prop-types'
 import Avatar from '../../components/Avatar'
+import Collapse from '../../components/Collapse'
 import Rating from '../../components/Rating'
+import Tags from '../../components/Tags'
 import Title from '../../components/Title'
+// import Slideshow from '../../components/Slideshow'
 
-function CardAccomodation() {
+function CardAccomodation({ appartment }) {
   return (
-    <div>
-      {/* <Gallery key={`${id}`} cover={cover} /> */}
+    <div className="card-accomodation">
+      {/* <Slideshow /> */}
       <div>
         <div>
-          <Title />
+          <Title title={appartment.title} location={appartment.location} />
           <div>
-            <Tag />
-            <Tag />
-            <Tag />
+            <Tags tags={appartment.tags} />
           </div>
         </div>
         <div>
           <Avatar />
-          <Rating />
+          <Rating rating={appartment.rating} />
         </div>
+      </div>
+      <div className="card-collapse">
+        <Collapse
+          title="Description"
+          description={appartment.description}
+          width="552px"
+        />
+        <Collapse
+          title="Équipements"
+          equipments={appartment.equipments}
+          width="582px"
+          idAccomodation={appartment.id}
+        />
       </div>
     </div>
   )
+}
+
+CardAccomodation.propTypes = {
+  appartment: PropTypes.object,
 }
 
 export default CardAccomodation

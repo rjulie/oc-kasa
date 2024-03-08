@@ -1,22 +1,18 @@
 import Banner from '../../components/Banner'
-import Footer from '../../components/Footer'
-import Header from '../../components/Header'
-import OpenDropdown from '../../components/OpenDropdown'
+import Collapse from '../../components/Collapse'
 import { aboutList } from '../../data/about.js'
 
 function About() {
   return (
     <div>
-      <Header />
       <Banner cover={'assets/landscape-kalen-emsley.jpg'} />
       <div className="dropdowns">
         {aboutList.map(({ id, title, description }) => (
           <div key={id}>
-            <OpenDropdown title={title} description={description} />
+            <Collapse title={title} description={description} width="1023px" />
           </div>
         ))}
       </div>
-      <Footer />
     </div>
   )
 }

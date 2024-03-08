@@ -1,12 +1,10 @@
-.dropdown-item {
+.collapse-item {
   background-color: $main-color;
-  width: 1023px;
   padding: 10px 20px 10px 15px;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  cursor: pointer;
 
   h2 {
     color: white;
@@ -17,24 +15,31 @@
   svg {
     color: white;
     @include text-bold-p;
+    cursor: pointer;
   }
 }
 
-.dropdown-text {
-  width: 1058px;
+.collapse-content {
+  padding: 10px 20px 10px 15px;
+  margin: 0;
+  @include text-xs-light;
+
+  li {
+    @include text-xs-light;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.collapse-text {
   background-color: $background-color;
   max-height: 0;
   overflow: hidden;
   transition: all 0.5s cubic-bezier(0, 1, 0, 1);
-
-  p {
-    padding: $spacing-xs;
-    margin: 0;
-    @include text-xs;
-  }
 }
 
-.dropdown-text.show {
+.collapse-text.show {
   height: auto;
   max-height: 9999px;
   transition: all 0.5s cubic-bezier(1, 0, 1, 0);

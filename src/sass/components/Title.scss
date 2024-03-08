@@ -1,0 +1,16 @@
+.card-title {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xxs;
+
+  h1 {
+    color: $main-color;
+    @include text-medium;
+    margin: 0;
+  }
+
+  .location {
+    color: $secondary-color;
+    @include text-xs;
+  }
+}

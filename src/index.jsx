@@ -6,20 +6,32 @@ import {
   Route,
   RouterProvider,
 } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 import About from './pages/About'
 import Accomodation from './pages/Accomodation'
-import ErrorPage from './pages/Error'
+import Error from './components/Error'
+import Header from './components/Header'
 import Home from './pages/Home'
-
 import './sass/main.css'
+import Footer from './components/Footer'
+
+function Layout() {
+  return (
+    <>
+      <Header />
+      <Outlet />
+      <Footer />
+    </>
+  )
+}
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route>
+    <Route element={<Layout />}>
       <Route path="/" element={<Home />} />
       <Route path="/accomodation/:idAccomodation" element={<Accomodation />} />
       <Route path="/about" element={<About />} />
-      <Route path="*" element={<ErrorPage />} />
+      <Route path="*" element={<Error />} />
     </Route>
   )
 )

@@ -1,0 +1,14 @@
+.tags {
+  display: flex;
+  flex-direction: row;
+  gap: $spacing-xxs;
+}
+
+.tag {
+  width: 115px;
+  height: 25px;
+  border-radius: 10px;
+  background-color: $main-color;
+  color: white;
+  @include text-tag;
+}

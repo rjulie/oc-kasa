@@ -4,6 +4,7 @@
 @import './base/typography';
 
 // Layout
+@import './layout/CardAccomodation';
 @import './layout/CardsItems';
 @import './layout/Error';
 @import './layout/Footer';
@@ -12,8 +13,10 @@
 //components
 @import './components/Banner';
 @import './components/CardItem';
-@import './components/Dropdown';
+@import './components/Collapse';
 @import './components/Gallery';
+@import './components/Tag';
+@import './components/Title';
 
 //pages
 @import './pages/about';
