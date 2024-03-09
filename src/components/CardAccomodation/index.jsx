@@ -22,7 +22,7 @@ function CardAccomodation({ appartment }) {
               picture={appartment.host.picture}
             />
           ) : null}
-          <Rating rating={appartment.rating} />
+          {appartment.rating ? <Rating rating={appartment.rating} /> : null}
         </div>
       </div>
       <div className="card-collapse">

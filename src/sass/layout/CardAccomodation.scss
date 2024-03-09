@@ -1,9 +1,11 @@
 .card-accomodation {
   padding: 0 100px;
+  margin: 50px 0;
 
   .card-collapse {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
