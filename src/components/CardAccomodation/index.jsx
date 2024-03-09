@@ -10,15 +10,18 @@ function CardAccomodation({ appartment }) {
   return (
     <div className="card-accomodation">
       {/* <Slideshow /> */}
-      <div>
+      <div className="card-info">
         <div>
           <Title title={appartment.title} location={appartment.location} />
-          <div>
-            <Tags tags={appartment.tags} />
-          </div>
+          <Tags tags={appartment.tags} />
         </div>
         <div>
-          <Avatar />
+          {appartment.host ? (
+            <Avatar
+              name={appartment.host.name}
+              picture={appartment.host.picture}
+            />
+          ) : null}
           <Rating rating={appartment.rating} />
         </div>
       </div>

@@ -18,6 +18,12 @@ code {
   flex-direction: row;
 }
 
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
 .container {
   width: 1240px;
   border-radius: 25px;
@@ -117,6 +123,26 @@ code {
 }
 .links > a:active {
   text-decoration: underline;
+}
+
+.avatar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.avatar .avatar-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  color: #ff6060;
+  text-align: right;
+}
+.avatar .avatar-picture {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
 }
 
 .banner {
@@ -243,6 +269,7 @@ code {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-bottom: 20px;
 }
 .card-title h1 {
   color: #ff6060;

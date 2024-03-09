@@ -2,9 +2,19 @@ import PropTypes from 'prop-types'
 
 function Avatar({ picture, name }) {
   return (
-    <div>
-      <div>{name}</div>
-      <div>{picture}</div>
+    <div className="avatar">
+      <div className="avatar-name">
+        <div>{name.split(' ')[0]}</div>
+        <div>{name.split(' ')[1]}</div>
+      </div>
+      <div
+        className="avatar-picture"
+        style={{
+          backgroundImage: `url('${picture}')`,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+        }}
+      ></div>
     </div>
   )
 }

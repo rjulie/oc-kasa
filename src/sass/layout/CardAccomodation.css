@@ -4,4 +4,9 @@
 .card-accomodation .card-collapse {
   display: flex;
   flex-direction: row;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=CardAccomodation.css.map */

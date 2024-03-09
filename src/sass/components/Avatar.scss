@@ -1,0 +1,18 @@
+.avatar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: $spacing-xxs;
+
+  .avatar-name {
+    @include text-xs;
+    color: $main-color;
+    text-align: right;
+  }
+
+  .avatar-picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+}
