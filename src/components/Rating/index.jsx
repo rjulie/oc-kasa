@@ -30,7 +30,7 @@ function Rating({ rating }) {
 
   return (
     <div>
-      {result.map(({ item, index }) =>
+      {result.map((item, index) =>
         item === 'solid' ? (
           <FontAwesomeIcon icon={faStarSolid} key={index} />
         ) : (
