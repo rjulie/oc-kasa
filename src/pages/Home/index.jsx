@@ -3,7 +3,7 @@ import CardsItems from '../../components/CardsItems'
 
 function Home() {
   return (
-    <div>
+    <div className="home">
       <Banner
         title={'Chez vous, partout et ailleurs'}
         cover={'assets/landscape-homepage.jpg'}

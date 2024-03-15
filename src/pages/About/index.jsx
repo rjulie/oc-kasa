@@ -4,7 +4,7 @@ import { aboutList } from '../../data/about.js'
 
 function About() {
   return (
-    <div className="about-banner">
+    <div className="about">
       <Banner cover={'assets/landscape-kalen-emsley.jpg'} />
       <div className="about-collapses">
         {aboutList.map(({ id, title, description }) => (

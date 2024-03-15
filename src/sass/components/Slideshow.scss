@@ -55,6 +55,7 @@
   position: absolute;
   bottom: 1rem;
   color: white;
+  @include text-xs;
 }
 
 .indicators-hidden {
