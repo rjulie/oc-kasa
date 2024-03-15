@@ -4,7 +4,7 @@ import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 import PropTypes from 'prop-types'
 
-function Collapse({ title, description = null, equipments = null, width }) {
+function Collapse({ title, description = null, equipments = null }) {
   const [open, setOpen] = useState(false)
 
   const toggle = () => {
@@ -16,7 +16,7 @@ function Collapse({ title, description = null, equipments = null, width }) {
 
   return (
     <div className="collapse">
-      <div className="collapse-item" style={{ width: width }}>
+      <div className="collapse-item">
         <h2>{title}</h2>
         <span>
           {open ? (
@@ -28,16 +28,14 @@ function Collapse({ title, description = null, equipments = null, width }) {
       </div>
       <div className={open ? 'collapse-text show' : 'collapse-text'}>
         {equipments ? (
-          <div className="collapse-content" style={{ width: width }}>
+          <div className="collapse-content">
             {equipments.map((equipment, index) => (
-              <li key={index}>{equipment}</li>
+              <div key={index}>{equipment}</div>
             ))}
           </div>
         ) : null}
         {description ? (
-          <div className="collapse-content" style={{ width: width }}>
-            {description}
-          </div>
+          <div className="collapse-content">{description}</div>
         ) : null}
       </div>
     </div>
@@ -48,7 +46,6 @@ Collapse.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   equipments: PropTypes.array,
-  width: PropTypes.string,
 }
 
 export default Collapse

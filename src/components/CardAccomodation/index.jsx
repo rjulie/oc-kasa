@@ -26,16 +26,12 @@ function CardAccomodation({ appartment }) {
         </div>
       </div>
       <div className="card-collapse">
-        <Collapse
-          title="Description"
-          description={appartment.description}
-          width="552px"
-        />
-        <Collapse
-          title="Équipements"
-          equipments={appartment.equipments}
-          width="582px"
-        />
+        <div style={{ width: '45%' }}>
+          <Collapse title="Description" description={appartment.description} />
+        </div>
+        <div style={{ width: '45%' }}>
+          <Collapse title="Équipements" equipments={appartment.equipments} />
+        </div>
       </div>
     </div>
   )

@@ -184,6 +184,10 @@ code {
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 }
 
+.collapse {
+  width: 100%;
+}
+
 .collapse-item {
   background-color: #ff6060;
   padding: 10px 20px 10px 15px;
@@ -209,35 +213,32 @@ code {
   cursor: pointer;
 }
 
-.collapse-content {
-  padding: 10px 20px 10px 15px;
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-}
-.collapse-content li {
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 .collapse-text {
   background-color: #f6f6f6;
+  height: 0;
   max-height: 0;
   overflow: hidden;
   transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.6%;
 }
 
 .collapse-text.show {
   height: auto;
   max-height: 9999px;
   transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.6%;
+}
+
+.collapse-content {
+  padding: 10px 20px 10px 15px;
 }
 
 .slideshow {
