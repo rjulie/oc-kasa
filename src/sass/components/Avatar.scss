@@ -6,6 +6,7 @@
 
   .avatar-name {
     @include text-xs;
+    line-height: 142.6%;
     color: $main-color;
     text-align: right;
   }

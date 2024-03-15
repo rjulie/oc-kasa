@@ -6,10 +6,10 @@ function About() {
   return (
     <div>
       <Banner cover={'assets/landscape-kalen-emsley.jpg'} />
-      <div className="dropdowns">
+      <div className="about-collapses">
         {aboutList.map(({ id, title, description }) => (
           <div key={id}>
-            <Collapse title={title} description={description} width="1023px" />
+            <Collapse title={title} description={description} />
           </div>
         ))}
       </div>

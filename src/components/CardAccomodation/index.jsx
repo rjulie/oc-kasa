@@ -15,7 +15,7 @@ function CardAccomodation({ appartment }) {
           <Title title={appartment.title} location={appartment.location} />
           <Tags tags={appartment.tags} />
         </div>
-        <div>
+        <div className="card-info-avatar">
           {appartment.host ? (
             <Avatar
               name={appartment.host.name}

@@ -1,27 +1,26 @@
 import PropTypes from 'prop-types'
 import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar as faStarSolid } from '@fortawesome/free-solid-svg-icons'
-import { faStar as faStarRegular } from '@fortawesome/free-regular-svg-icons'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 function Rating({ rating }) {
   const [result, SetResult] = useState([])
-  const solid_count = parseInt(rating)
-  const regular_count = 5 - solid_count
+  const full_count = parseInt(rating)
+  const empty_count = 5 - full_count
 
-  function result_stars(solid_count, regular_count) {
+  function result_stars(full_count, empty_count) {
     let rslt = []
-    for (let i = 0; i < solid_count; i++) {
-      rslt.push('solid')
+    for (let i = 0; i < full_count; i++) {
+      rslt.push('full')
     }
-    for (let i = 0; i < regular_count; i++) {
-      rslt.push('regular')
+    for (let i = 0; i < empty_count; i++) {
+      rslt.push('empty')
     }
     return rslt
   }
 
   useEffect(() => {
-    SetResult(result_stars(solid_count, regular_count))
+    SetResult(result_stars(full_count, empty_count))
   }, [])
 
   useEffect(() => {
@@ -29,12 +28,12 @@ function Rating({ rating }) {
   }, [result])
 
   return (
-    <div>
+    <div className="rating">
       {result.map((item, index) =>
-        item === 'solid' ? (
-          <FontAwesomeIcon icon={faStarSolid} key={index} />
+        item === 'full' ? (
+          <FontAwesomeIcon icon={faStar} key={index} className="rating-full" />
         ) : (
-          <FontAwesomeIcon icon={faStarRegular} key={index} />
+          <FontAwesomeIcon icon={faStar} key={index} className="rating-empty" />
         )
       )}
     </div>

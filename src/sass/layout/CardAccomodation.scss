@@ -13,4 +13,11 @@
   display: flex;
   justify-content: space-between;
   margin: $spacing-s 0;
+
+  .card-info-avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 }

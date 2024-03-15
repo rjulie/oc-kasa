@@ -25,6 +25,12 @@ code {
   justify-content: space-between;
   margin: 30px 0;
 }
+.card-info .card-info-avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 
 .container {
   width: 1240px;
@@ -138,6 +144,7 @@ code {
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
+  line-height: 142.6%;
   color: #ff6060;
   text-align: right;
 }
@@ -241,6 +248,19 @@ code {
   padding: 10px 20px 10px 15px;
 }
 
+.rating {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  font-size: 24px;
+}
+.rating .rating-full {
+  color: #ff6060;
+}
+.rating .rating-empty {
+  color: #e3e3e3;
+}
+
 .slideshow {
   height: 415px;
   border-radius: 25px;
@@ -291,12 +311,13 @@ code {
   font-weight: 500;
 }
 
-.dropdowns {
+.about-collapses {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 30px;
   margin: 38px 0;
+  padding: 0 100px;
 }
 
 .link-card {
