@@ -23,10 +23,6 @@ function Rating({ rating }) {
     SetResult(result_stars(full_count, empty_count))
   }, [])
 
-  useEffect(() => {
-    console.log(result)
-  }, [result])
-
   return (
     <div className="rating">
       {result.map((item, index) =>

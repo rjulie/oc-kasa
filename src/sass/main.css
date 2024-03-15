@@ -155,7 +155,7 @@ code {
 }
 
 .banner {
-  width: 1240px;
+  width: 100%;
   height: 223px;
   border-radius: 25px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -263,8 +263,50 @@ code {
 
 .slideshow {
   height: 415px;
+  width: 100%;
   border-radius: 25px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.slideshow .slide {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  text-align: center;
+}
+.slideshow .slide img {
+  width: 100%;
+}
+
+.slide-hidden {
+  display: none;
+}
+
+.arrow {
+  position: absolute;
+  font-size: 60px;
+  color: white;
+}
+.arrow:hover {
+  cursor: pointer;
+}
+
+.arrow-left {
+  left: 1rem;
+}
+
+.arrow-right {
+  right: 1rem;
+}
+
+.indicators {
+  position: absolute;
+  bottom: 1rem;
+  color: white;
 }
 
 .tags {
@@ -317,6 +359,9 @@ code {
   flex-direction: column;
   gap: 30px;
   margin: 38px 0;
+}
+
+.about {
   padding: 0 100px;
 }
 

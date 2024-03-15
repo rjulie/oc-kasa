@@ -4,12 +4,14 @@ import Collapse from '../../components/Collapse'
 import Rating from '../../components/Rating'
 import Tags from '../../components/Tags'
 import Title from '../../components/Title'
-// import Slideshow from '../../components/Slideshow'
+import Slideshow from '../../components/Slideshow'
 
 function CardAccomodation({ appartment }) {
   return (
     <div className="card-accomodation">
-      {/* <Slideshow /> */}
+      {appartment.pictures ? (
+        <Slideshow pictures={appartment.pictures} />
+      ) : null}
       <div className="card-info">
         <div>
           <Title title={appartment.title} location={appartment.location} />

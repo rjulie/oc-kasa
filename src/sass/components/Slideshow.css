@@ -1,5 +1,47 @@
 .slideshow {
   height: 415px;
+  width: 100%;
   border-radius: 25px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.slideshow .slide {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  text-align: center;
+}
+.slideshow .slide img {
+  width: 100%;
+}
+
+.slide-hidden {
+  display: none;
+}
+
+.arrow {
+  position: absolute;
+  font-size: 60px;
+  color: white;
+}
+.arrow:hover {
+  cursor: pointer;
+}
+
+.arrow-left {
+  left: 1rem;
+}
+
+.arrow-right {
+  right: 1rem;
+}
+
+.indicators {
+  position: absolute;
+  bottom: 1rem;
+  color: white;
 }/*# sourceMappingURL=Slideshow.css.map */
