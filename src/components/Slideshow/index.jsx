@@ -21,20 +21,43 @@ function Slideshow({ pictures }) {
     <div className="slideshow">
       <FontAwesomeIcon
         icon={faChevronLeft}
-        className="arrow arrow-left"
+        className={
+          pictures.length === 1
+            ? 'arrow arrow-left arrow-hidden'
+            : 'arrow arrow-left'
+        }
         onClick={prevSlide}
       />
       {pictures.map((item, index) => (
-        <div className={slide === index ? 'slide' : 'slide slide-hidden'}>
-          <img src={item} alt={item} key={index} />
+        <div
+          className={slide === index ? 'slide' : 'slide slide-hidden'}
+          key={index}
+        >
+          <div
+            className={
+              slide === index
+                ? 'slide center'
+                : 'slide slide-hidden center center-hidden'
+            }
+          >
+            <img src={item} alt={item} />
+          </div>
         </div>
       ))}
       <FontAwesomeIcon
         icon={faChevronRight}
-        className="arrow arrow-right"
+        className={
+          pictures.length === 1
+            ? 'arrow arrow-right arrow-hidden'
+            : 'arrow arrow-right'
+        }
         onClick={nextSlide}
       />
-      <span className="indicators">
+      <span
+        className={
+          pictures.length === 1 ? 'indicators indicators-hidden' : 'indicators'
+        }
+      >
         {slide + 1}/{pictures.length}
       </span>
     </div>

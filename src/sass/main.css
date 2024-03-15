@@ -271,15 +271,21 @@ code {
   align-items: center;
   position: relative;
 }
-.slideshow .slide {
+
+.slide {
   width: 100%;
   height: 100%;
   border-radius: 25px;
   overflow: hidden;
-  text-align: center;
 }
-.slideshow .slide img {
-  width: 100%;
+
+.center {
+  display: flex;
+  align-items: center;
+}
+
+.center-hidden {
+  display: none;
 }
 
 .slide-hidden {
@@ -295,6 +301,10 @@ code {
   cursor: pointer;
 }
 
+.arrow-hidden {
+  display: none;
+}
+
 .arrow-left {
   left: 1rem;
 }
@@ -307,6 +317,10 @@ code {
   position: absolute;
   bottom: 1rem;
   color: white;
+}
+
+.indicators-hidden {
+  display: none;
 }
 
 .tags {
