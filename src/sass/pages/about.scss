@@ -3,13 +3,30 @@
   align-items: center;
   flex-direction: column;
   gap: $spacing-s;
-  margin: 38px 0;
+  margin: 38px auto;
 
   .about-collapse {
     width: 100%;
+  }
+
+  @media only screen and (min-width: $breakpoint-xl-desktop) {
+    width: 1240px !important;
+  }
+
+  @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
+    gap: 20px;
+    margin: 19px auto;
   }
 }
 
 .about {
   padding: 0 100px;
+
+  .banner {
+    box-shadow: none;
+  }
+
+  @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
+    padding: 0 20px;
+  }
 }

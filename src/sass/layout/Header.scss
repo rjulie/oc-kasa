@@ -3,8 +3,16 @@
   justify-content: space-between;
   padding: 45px 100px 50px 100px;
 
+  @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
+    padding: 19px 19px 20px 19px;
+  }
+
   img {
     height: 68px;
+
+    @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
+      height: 45px;
+    }
   }
 
   .links {
@@ -12,6 +20,18 @@
     justify-content: space-between;
     align-items: center;
     width: 300px;
+
+    @media only screen and (min-width: 375px) and (max-width: 767px) {
+      gap: $spacing-s;
+      justify-content: flex-end;
+      width: 100%;
+    }
+
+    @media only screen and (min-width: 319px) and (max-width: 374px) {
+      gap: $spacing-xs;
+      justify-content: flex-end;
+      width: 100%;
+    }
   }
 }
 
@@ -22,5 +42,10 @@
 
   &:active {
     text-decoration: underline;
+  }
+
+  @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
+    @include text-xs-mobile;
+    text-transform: uppercase;
   }
 }

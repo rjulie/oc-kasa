@@ -12,5 +12,16 @@
     color: white;
     @include text-p;
     margin: 0;
+
+    @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
+      @include text-xs-mobile;
+      width: 30%;
+    }
+  }
+
+  @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
+    justify-content: center;
+    gap: $spacing-xs;
+    padding: 66px 0px 58px 0px;
   }
 }
