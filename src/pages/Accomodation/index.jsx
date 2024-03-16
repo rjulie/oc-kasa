@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import CardAccomodation from '../../components/CardAccomodation'
 
@@ -29,7 +29,11 @@ function Accomodation() {
   return (
     <div>
       <div>
-        {appartment ? <CardAccomodation appartment={appartment} /> : null}
+        {appartment ? (
+          <CardAccomodation appartment={appartment} />
+        ) : (
+          <Navigate to="*" />
+        )}
       </div>
     </div>
   )
