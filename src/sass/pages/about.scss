@@ -4,6 +4,10 @@
   flex-direction: column;
   gap: $spacing-s;
   margin: 38px 0;
+
+  .about-collapse {
+    width: 100%;
+  }
 }
 
 .about {

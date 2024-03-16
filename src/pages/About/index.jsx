@@ -8,7 +8,7 @@ function About() {
       <Banner cover={'assets/landscape-kalen-emsley.jpg'} />
       <div className="about-collapses">
         {aboutList.map(({ id, title, description }) => (
-          <div key={id}>
+          <div className="about-collapse" key={id}>
             <Collapse title={title} description={description} />
           </div>
         ))}

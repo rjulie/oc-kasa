@@ -378,6 +378,9 @@ code {
   gap: 30px;
   margin: 38px 0;
 }
+.about-collapses .about-collapse {
+  width: 100%;
+}
 
 .about {
   padding: 0 100px;
