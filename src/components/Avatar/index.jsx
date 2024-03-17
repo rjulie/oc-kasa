@@ -7,14 +7,7 @@ function Avatar({ picture, name }) {
         <div>{name.split(' ')[0]}</div>
         <div>{name.split(' ')[1]}</div>
       </div>
-      <div
-        className="avatar-picture"
-        style={{
-          backgroundImage: `url('${picture}')`,
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center',
-        }}
-      ></div>
+      <img src={picture} alt={name} className="avatar-picture" />
     </div>
   )
 }

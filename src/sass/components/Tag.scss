@@ -14,4 +14,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
+    @include text-tag-mobile;
+  }
 }

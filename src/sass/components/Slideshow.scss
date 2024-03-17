@@ -7,6 +7,10 @@
   justify-content: center;
   align-items: center;
   position: relative;
+
+  @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
+    height: 255px;
+  }
 }
 
 .slide {
@@ -14,6 +18,16 @@
   height: 100%;
   border-radius: 25px;
   overflow: hidden;
+
+  @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
+    border-radius: 10px;
+  }
+
+  img {
+    @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
+      width: 100%;
+    }
+  }
 }
 
 .center {
@@ -37,6 +51,10 @@
   &:hover {
     cursor: pointer;
   }
+
+  @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
+    font-size: 24px;
+  }
 }
 
 .arrow-hidden {
@@ -56,6 +74,10 @@
   bottom: 1rem;
   color: white;
   @include text-xs;
+
+  @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
+    color: transparent;
+  }
 }
 
 .indicators-hidden {

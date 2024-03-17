@@ -97,3 +97,10 @@
   font-style: normal;
   font-size: 96px;
 }
+
+@mixin text-tag-mobile {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 10px;
+}

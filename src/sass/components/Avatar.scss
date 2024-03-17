@@ -9,11 +9,20 @@
     line-height: 142.6%;
     color: $main-color;
     text-align: right;
+
+    @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
+      @include text-xs-mobile;
+    }
   }
 
   .avatar-picture {
     width: 64px;
     height: 64px;
     border-radius: 50%;
+
+    @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
+      width: 32px;
+      height: 32px;
+    }
   }
 }
