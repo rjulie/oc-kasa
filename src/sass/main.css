@@ -389,6 +389,7 @@ code {
   .banner {
     height: 111px;
     border-radius: 10px;
+    box-shadow: none;
   }
 }
 
@@ -735,6 +736,6 @@ code {
 }
 @media only screen and (min-width: 319px) and (max-width: 767px) {
   .home {
-    padding: 20px;
+    padding: 0 20px;
   }
 }/*# sourceMappingURL=main.css.map */
