@@ -83,3 +83,17 @@
   font-style: normal;
   font-size: 13px;
 }
+
+@mixin text-medium-mobile {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+}
+
+@mixin text-xlarge-mobile {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 96px;
+}

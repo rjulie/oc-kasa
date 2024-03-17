@@ -66,7 +66,7 @@ code {
     justify-content: flex-start;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 0;
+    padding: 50px;
     width: 100%;
     gap: 20px;
   }
@@ -99,6 +99,19 @@ code {
   font-style: normal;
   font-weight: 700;
 }
+@media only screen and (min-width: 319px) and (max-width: 767px) {
+  .error .error-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 96px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .error .error-title {
+    font-size: 192px;
+  }
+}
 .error .error-text {
   color: #ff6060;
   font-family: "Montserrat", sans-serif;
@@ -107,16 +120,40 @@ code {
   font-weight: 500;
   line-height: 142.6%;
 }
+@media only screen and (min-width: 319px) and (max-width: 767px) {
+  .error .error-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    text-align: center;
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .error .error-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+  }
+}
 .error .error-redirect {
   color: #000000;
-  text-decoration: none;
+  text-decoration: underline;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
 }
-.error .error-redirect:active {
-  text-decoration: underline;
+@media only screen and (min-width: 319px) and (max-width: 1023px) {
+  .error .error-redirect {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+  }
 }
 
 .footer {
@@ -167,7 +204,12 @@ code {
 .navbar img {
   height: 68px;
 }
-@media only screen and (min-width: 319px) and (max-width: 767px) {
+@media only screen and (min-width: 319px) and (max-width: 375px) {
+  .navbar img {
+    height: 40px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
   .navbar img {
     height: 45px;
   }
@@ -177,6 +219,14 @@ code {
   justify-content: space-between;
   align-items: center;
   width: 300px;
+  width: 240px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .navbar .links {
+    gap: 30px;
+    justify-content: flex-end;
+    width: 80%;
+  }
 }
 @media only screen and (min-width: 375px) and (max-width: 767px) {
   .navbar .links {
@@ -305,7 +355,13 @@ code {
   margin: 0;
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 }
-@media only screen and (min-width: 319px) and (max-width: 767px) {
+@media only screen and (min-width: 319px) and (max-width: 375px) {
+  .card-item {
+    height: 255px;
+    width: 280px !important;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
   .card-item {
     height: 255px;
     width: 335px !important;

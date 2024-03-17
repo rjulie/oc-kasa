@@ -10,20 +10,39 @@
     color: $main-color;
     text-align: center;
     @include text-xlarge;
+
+    @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
+      @include text-xlarge-mobile;
+    }
+
+    @media only screen and (min-width: $breakpoint-tablet) and (max-width: 1023px) {
+      font-size: 192px;
+    }
   }
 
   .error-text {
     color: $main-color;
     @include text-medium;
+
+    @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
+      @include text-xs;
+      line-height: 142.6%;
+      text-align: center;
+      width: 70%;
+    }
+
+    @media only screen and (min-width: $breakpoint-tablet) and (max-width: 1023px) {
+      @include text-p;
+    }
   }
 
   .error-redirect {
     color: $secondary-color;
-    text-decoration: none;
+    text-decoration: underline;
     @include text-small;
 
-    &:active {
-      text-decoration: underline;
+    @media only screen and (min-width: $breakpoint-mobile) and (max-width: 1023px) {
+      @include text-medium-mobile;
     }
   }
 }

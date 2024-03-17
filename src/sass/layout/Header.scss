@@ -10,7 +10,11 @@
   img {
     height: 68px;
 
-    @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
+    @media only screen and (min-width: 319px) and (max-width: 375px) {
+      height: 40px;
+    }
+
+    @media only screen and (min-width: 375px) and (max-width: 767px) {
       height: 45px;
     }
   }
@@ -20,6 +24,14 @@
     justify-content: space-between;
     align-items: center;
     width: 300px;
+
+    width: 240px;
+
+    @media only screen and (min-width: $breakpoint-tablet) and (max-width: 1023px) {
+      gap: $spacing-s;
+      justify-content: flex-end;
+      width: 80%;
+    }
 
     @media only screen and (min-width: 375px) and (max-width: 767px) {
       gap: $spacing-s;
