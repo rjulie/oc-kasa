@@ -30,12 +30,19 @@ code {
 @media only screen and (min-width: 319px) and (max-width: 767px) {
   .card-accomodation .card-collapse {
     flex-direction: column;
+    gap: 20px;
   }
 }
 @media only screen and (min-width: 319px) and (max-width: 767px) {
   .card-accomodation {
     padding: 0 20px;
-    margin: 27px 0;
+    margin: 0 0 27px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .card-accomodation {
+    padding: 0 70px;
+    margin: 30px 0;
   }
 }
 
@@ -55,10 +62,12 @@ code {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
   }
 }
 @media only screen and (min-width: 319px) and (max-width: 767px) {
   .card-info {
+    margin: 0;
     flex-direction: column;
   }
 }
@@ -545,16 +554,6 @@ code {
   border-radius: 25px;
   overflow: hidden;
 }
-@media only screen and (min-width: 319px) and (max-width: 767px) {
-  .slide {
-    border-radius: 10px;
-  }
-}
-@media only screen and (min-width: 319px) and (max-width: 767px) {
-  .slide img {
-    width: 100%;
-  }
-}
 
 .center {
   display: flex;
@@ -619,6 +618,11 @@ code {
   flex-direction: row;
   gap: 10px;
 }
+@media only screen and (min-width: 319px) and (max-width: 767px) {
+  .tags {
+    margin-bottom: 20px;
+  }
+}
 
 .tag {
   padding: 0 10px;
@@ -664,6 +668,7 @@ code {
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
+    margin-top: 15px;
   }
 }
 .card-title .location {
@@ -679,6 +684,11 @@ code {
     font-weight: 500;
     font-style: normal;
     font-size: 14px;
+  }
+}
+@media only screen and (min-width: 319px) and (max-width: 767px) {
+  .card-title {
+    margin-bottom: 15px;
   }
 }
 

@@ -11,6 +11,7 @@
 
     @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
       @include text-xs;
+      margin-top: $spacing-xs;
     }
   }
 
@@ -21,5 +22,9 @@
     @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
       @include text-medium-mobile;
     }
+  }
+
+  @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
+    margin-bottom: $spacing-xs;
   }
 }
