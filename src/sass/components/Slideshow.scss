@@ -18,6 +18,18 @@
   height: 100%;
   border-radius: 25px;
   overflow: hidden;
+
+  @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
+    border-radius: 10px;
+  }
+}
+
+.slide img {
+  @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+  }
 }
 
 .center {

@@ -555,6 +555,20 @@ code {
   border-radius: 25px;
   overflow: hidden;
 }
+@media only screen and (min-width: 319px) and (max-width: 767px) {
+  .slide {
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 319px) and (max-width: 767px) {
+  .slide img {
+    width: 120%;
+    height: 120%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 
 .center {
   display: flex;
