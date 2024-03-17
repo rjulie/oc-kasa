@@ -4,4 +4,8 @@
 
 .home {
   padding: 0 100px;
+
+  @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
+    padding: $spacing-mobile;
+  }
 }

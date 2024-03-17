@@ -14,7 +14,7 @@
   }
 
   @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
-    gap: 20px;
+    gap: $spacing-mobile;
     margin: 19px auto;
   }
 }
@@ -27,6 +27,6 @@
   }
 
   @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
-    padding: 0 20px;
+    padding: 0 $spacing-mobile;
   }
 }

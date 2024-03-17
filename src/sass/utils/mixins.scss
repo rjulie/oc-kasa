@@ -55,6 +55,14 @@
   line-height: 142.6%;
 }
 
+@mixin text-bold-medium {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 142.6%;
+}
+
 @mixin text-xlarge {
   font-family: 'Montserrat', sans-serif;
   font-size: 288px;

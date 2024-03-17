@@ -12,6 +12,20 @@
     @include text-h1;
     color: white;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
+      @include text-bold-p;
+      line-height: 100%;
+      margin-left: $spacing-xs;
+      margin-right: $spacing-l;
+    }
+
+    @media only screen and (min-width: $breakpoint-tablet) and (max-width: 1023px) {
+      @include text-bold-medium;
+      line-height: 100%;
+      margin-left: $spacing-s;
+      margin-right: $spacing-l;
+    }
   }
 
   @media only screen and (min-width: $breakpoint-xl-desktop) {
