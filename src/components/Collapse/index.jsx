@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 import PropTypes from 'prop-types'
@@ -20,7 +19,11 @@ function Collapse({ title, description = null, equipments = null }) {
         <h2>{title}</h2>
         <span>
           {open ? (
-            <FontAwesomeIcon icon={faChevronDown} onClick={() => toggle()} />
+            <FontAwesomeIcon
+              icon={faChevronUp}
+              onClick={() => toggle()}
+              className="show"
+            />
           ) : (
             <FontAwesomeIcon icon={faChevronUp} onClick={() => toggle()} />
           )}

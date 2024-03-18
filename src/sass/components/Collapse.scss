@@ -30,6 +30,14 @@
     }
   }
 
+  .show {
+    transform: rotate(180deg);
+
+    svg {
+      transition: all 0.3s ease;
+    }
+  }
+
   @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
     padding: 6px 10px 6px 10px;
   }

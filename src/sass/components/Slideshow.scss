@@ -78,7 +78,7 @@
   @include text-xs;
 
   @media only screen and (min-width: $breakpoint-mobile) and (max-width: 767px) {
-    color: transparent;
+    display: none;
   }
 }
 

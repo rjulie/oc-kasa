@@ -464,6 +464,12 @@ code {
     font-size: 18px;
   }
 }
+.collapse-item .show {
+  transform: rotate(180deg);
+}
+.collapse-item .show svg {
+  transition: all 0.3s ease;
+}
 @media only screen and (min-width: 319px) and (max-width: 767px) {
   .collapse-item {
     padding: 6px 10px 6px 10px;
@@ -620,7 +626,7 @@ code {
 }
 @media only screen and (min-width: 319px) and (max-width: 767px) {
   .indicators {
-    color: transparent;
+    display: none;
   }
 }
 
