@@ -744,6 +744,7 @@ code {
 @media only screen and (min-width: 319px) and (max-width: 767px) {
   .about {
     padding: 0 20px;
+    min-height: 60vh;
   }
 }
 
