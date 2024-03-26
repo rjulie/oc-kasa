@@ -81,6 +81,11 @@ code {
   align-items: center;
   margin: 50px auto;
 }
+.container .test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container .cards-items {
   display: flex;
   flex-direction: row;
@@ -111,9 +116,24 @@ code {
     gap: 20px;
   }
 }
-@media only screen and (min-width: 1441px) {
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
   .container .cards-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 60px;
     justify-content: center;
+    padding: initial;
+    padding: 50px;
+  }
+}
+@media only screen and (min-width: 1921px) {
+  .container .cards-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 60px;
+    justify-content: center;
+    padding: initial;
+    padding: 50px;
   }
 }
 @media only screen and (min-width: 319px) and (max-width: 1023px) {

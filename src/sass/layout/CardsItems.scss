@@ -7,6 +7,12 @@
   align-items: center;
   margin: 50px auto;
 
+  .test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .cards-items {
     display: flex;
     flex-direction: row;
@@ -35,8 +41,22 @@
       gap: $spacing-mobile;
     }
 
-    @media only screen and (min-width: 1441px) {
+    @media only screen and (min-width: 1441px) and (max-width: 1920px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: $spacing-m;
       justify-content: center;
+      padding: initial;
+      padding: 50px;
+    }
+
+    @media only screen and (min-width: 1921px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: $spacing-m;
+      justify-content: center;
+      padding: initial;
+      padding: 50px;
     }
   }
 

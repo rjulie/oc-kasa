@@ -22,14 +22,16 @@ function CardsItems() {
 
   return (
     <div className="container">
-      <div className="cards-items">
-        {appartmentList.map(({ id, cover, title }) => (
-          <Link to={'/accomodation/' + id} key={id} className="link-card">
-            <div key={id}>
-              <CardItem cover={cover} title={title} />
-            </div>
-          </Link>
-        ))}
+      <div className="test">
+        <div className="cards-items">
+          {appartmentList.map(({ id, cover, title }) => (
+            <Link to={'/accomodation/' + id} key={id} className="link-card">
+              <div key={id}>
+                <CardItem cover={cover} title={title} />
+              </div>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   )
