@@ -1,6 +1,6 @@
 .card-accomodation {
   padding: 0 100px;
-  margin: 50px 0;
+  margin: 50px auto;
 
   .card-collapse {
     display: flex;
@@ -29,6 +29,10 @@
   @media only screen and (min-width: $breakpoint-tablet) and (max-width: 1023px) {
     padding: 0 70px;
     margin: 30px 0;
+  }
+
+  @media only screen and (min-width: 1441px) {
+    width: 1240px;
   }
 }
 

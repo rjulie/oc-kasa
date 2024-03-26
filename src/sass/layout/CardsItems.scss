@@ -7,7 +7,7 @@
   align-items: center;
   margin: 50px auto;
 
-  .test {
+  .cards-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,10 +31,19 @@
       gap: $spacing-mobile;
     }
 
-    @media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+    @media only screen and (min-width: $breakpoint-tablet) and (max-width: 1023px) {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: $spacing-mobile;
+      justify-content: center;
+      padding: initial;
+      padding: 50px;
+    }
+
+    @media only screen and (min-width: 1024px) and (max-width: $breakpoint-desktop) {
       flex-direction: row;
       justify-content: flex-start;
-      justify-content: center;
+      align-items: center;
       flex-wrap: wrap;
       padding: 50px;
       width: 100%;

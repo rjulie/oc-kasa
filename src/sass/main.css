@@ -12,7 +12,7 @@ code {
 
 .card-accomodation {
   padding: 0 100px;
-  margin: 50px 0;
+  margin: 50px auto;
 }
 .card-accomodation .card-collapse {
   display: flex;
@@ -43,6 +43,11 @@ code {
   .card-accomodation {
     padding: 0 70px;
     margin: 30px 0;
+  }
+}
+@media only screen and (min-width: 1441px) {
+  .card-accomodation {
+    width: 1240px;
   }
 }
 
@@ -81,7 +86,7 @@ code {
   align-items: center;
   margin: 50px auto;
 }
-.container .test {
+.container .cards-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,11 +110,21 @@ code {
     gap: 20px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .container .cards-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+    padding: initial;
+    padding: 50px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1024px) {
   .container .cards-items {
     flex-direction: row;
     justify-content: flex-start;
-    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     padding: 50px;
     width: 100%;

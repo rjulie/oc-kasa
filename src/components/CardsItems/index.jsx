@@ -22,7 +22,7 @@ function CardsItems() {
 
   return (
     <div className="container">
-      <div className="test">
+      <div className="cards-container">
         <div className="cards-items">
           {appartmentList.map(({ id, cover, title }) => (
             <Link to={'/accomodation/' + id} key={id} className="link-card">
